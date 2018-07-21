@@ -212,75 +212,49 @@
 	git push origin :refs/tags/v0.9 ： 删除远程标签 v0.9；
 
 ## 九、 git 常命令
-
-　　mkdir XX	： 创建一个空目录 XX 指目录名;
-
-　　pwd		： 显示当前目录的路径;
-
-　　cat XX	: 查看 XX 文件内容;
-
-　　git init	: 把当前的目录变成 git 仓库，生成隐藏.git文件;
-
-　　git add XX	: 把 xx 文件添加到暂存区;
-
-　　git commit –m “XX” : 提交文件 –m 后面的是注释;
-
-　　git status	: 查看仓库状态;
-
-　　git diff XX	: 查看 XX 文件修改了那些内容;
-
-　　git log	: 查看历史记录;
-
-　　git reset --hard HEAD^	: 回退到上一个版本;
-
-　　git reset --hard HEAD~ 	: 回退到上一个版本;
-
-　　git reset –-hard HEAD~100	: 回退到上 100 个版本;
-
-　　git reflog	: 查看历史记录的版本号id;
-
-　　git checkout -- XX	: 把XX文件在工作区的修改全部撤销;
-
-　　git rm XX	: 删除 XX 文件;
-
-　　git remote add origin https://github.com/zls/test	: 关联一个远程库;
-
-　　git push –u(第一次要用-u 以后不需要) origin master	: 把当前master分支推送到远程库;
-
-　　git clone https://github.com/zls/test	: 从远程库中克隆;
-
-　　git checkout –b dev  创建dev分支 并切换到dev分支上
-
-　　git branch  查看当前所有的分支
-
-　　git checkout master 切换回master分支
-
-　　git merge dev    在当前的分支上合并dev分支
-
-　　git branch –d dev 删除dev分支
-
-　　git branch name  创建分支
-
-　　git stash 把当前的工作隐藏起来 等以后恢复现场后继续工作
-
-　　git stash list 查看所有被隐藏的文件列表
-
-　　git stash apply 恢复被隐藏的文件，但是内容不删除
-
-　　git stash drop 删除文件
-
-　　git stash pop 恢复文件的同时 也删除文件
-
-　　git remote 查看远程库的信息
-
-　　git remote –v 查看远程库的详细信息
-
-　　git push origin master  Git会把master分支推送到远程库对应的远程分支上
+	mkdir XX	： 创建一个空目录 XX 指目录名;
+	pwd		： 显示当前目录的路径;
+	cat XX	: 查看 XX 文件内容;
+	git init	: 把当前的目录变成 git 仓库，生成隐藏.git文件;
+	git add XX	: 把 xx 文件添加到暂存区;
+	git commit –m “XX” : 提交文件 –m 后面的是注释;
+	git status	: 查看仓库状态;
+	git diff XX	: 查看 XX 文件修改了那些内容;
+	git log	: 查看历史记录;
+	git reset --hard HEAD^	: 回退到上一个版本;
+	git reset --hard HEAD~ 	: 回退到上一个版本;
+	git reset –-hard HEAD~100	: 回退到上 100 个版本;
+	git reflog	: 查看历史记录的版本号id;
+	git checkout -- XX	: 把XX文件在工作区的修改全部撤销;
+	git rm XX	: 删除 XX 文件;
+	git remote add origin https://github.com/zls/test	: 关联一个远程库;
+	git push –u(第一次要用-u 以后不需要) origin master	: 把当前master分支推送到远程库;
+	git clone https://github.com/zls/test	: 从远程库中克隆;
+	git checkout –b dev  创建dev分支 并切换到dev分支上
+	git branch  查看当前所有的分支
+	git checkout master 切换回master分支
+	git merge dev    在当前的分支上合并dev分支
+	git branch –d dev 删除dev分支
+	git branch name  创建分支
+	git stash 把当前的工作隐藏起来 等以后恢复现场后继续工作
+	git stash list 查看所有被隐藏的文件列表
+	git stash apply 恢复被隐藏的文件，但是内容不删除
+	git stash drop 删除文件
+	git stash pop 恢复文件的同时 也删除文件
+	git remote 查看远程库的信息
+	git remote –v 查看远程库的详细信息
+	git push origin master  Git会把 master 分支推送到远程库对应的远程分支上
 
 
-##九、答疑
+## 十、海龟（TortoiseGit)
+	
+	安装 TortoiseGit，然后就能看到可爱的文件夹及文件的 git 提示 icon 了；
+	汉化包：直接官方下载安装，然后在设置页可选择语言；
+ 
 
-###1. 如何修改远程仓库 url
+## 十一、答疑
+
+### 1. 如何修改远程仓库 url？
 	
 	方式一：先删除原来的 url，再创建新的 url；
 	git remote rm origin
@@ -291,6 +265,11 @@
 
 	方式三：手动修改 .git/config 文件，找到url进行相应的修	
 	url = git@github.com:zhoulingsong/git.git
+
+### 2. TortoiseGit 安装完后无法进行远程操作？
+
+	需要修改 TortoiseGit 的 SSH client；
+	setting -> NetWork -> SSH client -> git 下面的 ssh.exe(去 git 安装目录下找）
 
 ---
 ---
