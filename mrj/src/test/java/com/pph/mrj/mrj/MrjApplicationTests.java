@@ -1,4 +1,4 @@
-package com.zls.mrj;
+package com.pph.mrj.mrj;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

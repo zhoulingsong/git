@@ -1,4 +1,4 @@
-package com.zls.mrj;
+package com.pph.mrj.mrj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,6 +9,4 @@ public class MrjApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MrjApplication.class, args);
 	}
-	
-	
 }
